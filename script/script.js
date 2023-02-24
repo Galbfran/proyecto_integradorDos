@@ -92,11 +92,55 @@ const renderizarPersonajes = (harryPotter) => {
 renderizarPersonajes(harryPotter)
 
 //evento button para agregar cantidad
-
+// primer boton
 const modificacionArray = JSON.parse(localStorage.getItem("librosArray"))
 console.log(modificacionArray)
 document.getElementById('libro-1').addEventListener('click', function () {
     modificacionArray[0].cantidad += 1;
-    localStorage.setItem('librosArray', modificacionArray);
+    localStorage.setItem('librosArray', JSON.stringify(modificacionArray));
+    alert("Se a agregado "+ modificacionArray[0].titulo +" al carrito ")
 });
 
+
+//segundo boton
+document.getElementById('libro-2').addEventListener('click', function () {
+    modificacionArray[1].cantidad += 1;
+    localStorage.setItem('librosArray', JSON.stringify(modificacionArray));
+    alert("Se a agregado "+ modificacionArray[1].titulo +" al carrito ")
+});
+
+//tercer boton
+document.getElementById('libro-3').addEventListener('click', function () {
+    modificacionArray[2].cantidad += 1;
+    localStorage.setItem('librosArray', JSON.stringify(modificacionArray));
+    alert("Se a agregado "+ modificacionArray[2].titulo +" al carrito ")
+});
+
+//cuarto boton
+document.getElementById('libro-4').addEventListener('click', function () {
+    modificacionArray[3].cantidad += 1;
+    localStorage.setItem('librosArray', JSON.stringify(modificacionArray));
+    alert("Se a agregado "+ modificacionArray[3].titulo +" al carrito ")
+});
+
+//quinto boton
+document.getElementById('libro-5').addEventListener('click', function () {
+    modificacionArray[4].cantidad += 1;
+    localStorage.setItem('librosArray', JSON.stringify(modificacionArray));
+    alert("Se a agregado "+ modificacionArray[4].titulo +" al carrito ")
+});
+
+// sexto boton
+document.getElementById('libro-6').addEventListener('click', function () {
+    modificacionArray[5].cantidad += 1;
+    localStorage.setItem('librosArray', JSON.stringify(modificacionArray));
+    alert("Se a agregado "+ modificacionArray[5].titulo +" al carrito ")
+});
+
+//septimo boton
+
+document.getElementById('libro-7').addEventListener('click', function () {
+    modificacionArray[6].cantidad += 1;
+    localStorage.setItem('librosArray', JSON.stringify(modificacionArray));
+    alert("Se a agregado "+ modificacionArray[6].titulo +" al carrito ")
+});
