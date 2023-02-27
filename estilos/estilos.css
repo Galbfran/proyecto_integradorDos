@@ -116,6 +116,25 @@ button:hover::before {
     gap: 15px;
 }
 
+@media only screen and (max-width: 800px) {
+    .cartas{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .cartas{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
 
 .carta{
     background-color: rgb(95, 95, 95, 0.7);
@@ -129,6 +148,27 @@ button:hover::before {
     padding-left: 20px;
     padding-right: 20px;
 }
+
+@media only screen and (max-width: 900px) {
+    .carta{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .carta{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        align-items: center;
+        
+    }
+}
+
 
 .cartaTexto{
     display: flex;
@@ -250,4 +290,8 @@ button:hover::before {
 }
 .cantidadCarrito button::before{
     background-image: linear-gradient(to right, #0f45d8 0%, #47b2f9 100%);
+}
+
+.botonesSumaResta{
+    width: 100%;
 }
