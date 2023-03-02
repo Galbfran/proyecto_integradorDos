@@ -122,14 +122,14 @@ button:hover::before {
         flex-direction: column;
         width: 80%;
         align-items: center;
-        
+        flex-wrap: nowrap;
     }
 }
 
 @media only screen and (max-width: 1200px) {
     .cartas{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 80%;
         align-items: center;
         flex-wrap: wrap;
@@ -284,7 +284,7 @@ button:hover::before {
 }
 
 .cantidadCarrito button{
-    width: 20%;
+    width: 40%;
     height: 80%;
     font-size: x-large;
 }
