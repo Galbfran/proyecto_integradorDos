@@ -295,3 +295,34 @@ button:hover::before {
 .botonesSumaResta{
     width: 100%;
 }
+
+
+/* contacto */
+
+.contenedorContacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.datosContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(95, 95, 95, 0.7);
+    width: 60%;
+    gap:  20px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.formulario{
+    display: flex;
+    
+}
+
+.botonesForm button::before{
+    background-image: linear-gradient(to right, #d1d80f 0%, #f96247 100%);
+}
